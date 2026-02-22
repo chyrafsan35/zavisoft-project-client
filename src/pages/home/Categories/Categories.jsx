@@ -19,7 +19,7 @@ const Categories = () => {
             <div className="max-w-7xl mx-auto">
 
                 <div className="pt-10 lg:pt-20 pb-10">
-                    <h2 className="text-white text-2xl lg:text-7xl font-semibold uppercase">
+                    <h2 className="text-white text-2xl lg:text-7xl font-semibold lg:uppercase leading-none">
                         Categories
                     </h2>
                 </div>
