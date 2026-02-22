@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
 import Showcase from '../Showcase/Showcase';
+import Categories from '../Categories/Categories';
 
 const HomePage = () => {
     return (
@@ -10,6 +11,7 @@ const HomePage = () => {
                 <Banner></Banner>
                 <Showcase></Showcase>
             </div>
+                <Categories></Categories>
         </>
     );
 };
