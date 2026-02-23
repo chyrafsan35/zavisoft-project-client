@@ -12,11 +12,13 @@ const ProductCard = ({ shoe }) => {
                     New
                 </div>
 
-                <img
-                    src={shoe.category.image}
-                    alt={shoe.title}
-                    className="w-full object-contain rounded-xl lg:rounded-3xl"
-                />
+                <div className="w-[155px] h-[164px] lg:w-[302px] lg:h-[334px] overflow-hidden">
+                    <img
+                        src={shoe.images?.[0]}
+                        alt={shoe.title}
+                        className="w-full h-full object-cover rounded-xl lg:rounded-3xl"
+                    />
+                </div>
             </div>
 
             {/* Title */}

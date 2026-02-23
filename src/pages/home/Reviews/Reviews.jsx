@@ -54,7 +54,7 @@ const Reviews = () => {
                     <img
                         src={img1}
                         alt="shoe"
-                        className="w-full h-[260px] lg:h-[350px] object-contain"
+                        className="w-full h-[229px] lg:h-[339px] object-cover"
                     />
                 </div>
                 <div className="bg-[#EDEDED] rounded-[28px] overflow-hidden w-[358px] h-[339px] lg:w-[429px] lg:h-[501px] hidden lg:block">
@@ -92,10 +92,10 @@ const Reviews = () => {
                     <img
                         src={img2}
                         alt="shoe"
-                        className="w-full h-[260px] lg:h-[350px] object-cover"
+                        className="w-full h-[229px] lg:h-[339px] object-cover"
                     />
                 </div>
-                <div className="bg-[#EDEDED] rounded-[28px] overflow-hidden w-[358px] h-[339px] lg:w-[429px] lg:h-[501px] hidden lg:block">
+                <div className="bg-[#EDEDED] rounded-[28px] overflow-hidden w-[358px] h-[339px] lg:w-[429px] lg:h-[501px] ">
 
                     <div className="p-6 lg:p-8 flex justify-between items-start">
 
@@ -130,7 +130,7 @@ const Reviews = () => {
                     <img
                         src={img3}
                         alt="shoe"
-                        className="w-full h-[260px] lg:h-[350px] object-cover"
+                        className="w-full h-[229px] lg:h-[339px] object-cover"
                     />
                 </div>
             </div>

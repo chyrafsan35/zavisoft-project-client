@@ -11,7 +11,7 @@ const CategoryCard = ({ item, index }) => {
       `}
         >
             <img
-                src={item.category.image}
+                src={item.images?.[0]}
                 alt={item.title}
                 className="absolute inset-0 w-full h-full object-cover"
             />
