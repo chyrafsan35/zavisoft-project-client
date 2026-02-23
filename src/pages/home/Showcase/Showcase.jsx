@@ -2,18 +2,26 @@ import React, { useEffect, useState } from 'react';
 import Button from '../../../components/Button';
 import useAxios from '../../../hooks/useAxios';
 import ProductCard from '../../../components/ProductCard';
+import ShoeLoading from '../../../components/ShoeLoading';
 
 const Showcase = () => {
 
     const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
+
     const axiosInstance = useAxios();
     useEffect(() => {
         axiosInstance.get('/categories/4/products')
             .then(data => {
                 setProducts(data.data);
-                console.log(data.data)
+                console.log(data.data);
+                setLoading(false)
             })
     }, [axiosInstance])
+
+    if(loading){
+        return <ShoeLoading></ShoeLoading>
+    }
 
     return (
         <>

@@ -6,6 +6,8 @@ import front from "../../assets/front.png";
 import back from "../../assets/back.png";
 import Button from "../../components/Button";
 import Suggestions from "../shared/Suggestions";
+import ShoeLoading from "../../components/ShoeLoading";
+import ErrorPage from "../ErrorPage/ErrorPage";
 
 const ProductDetails = () => {
     const { id } = useParams();
@@ -14,12 +16,20 @@ const ProductDetails = () => {
     const [product, setProduct] = useState(null);
     const [selectedSize, setSelectedSize] = useState(null);
     const [currentImage, setCurrentImage] = useState(0);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(false);
 
     const sizes = [38, 39, 40, 41, 42, 43, 44, 45, 46, 47];
 
     useEffect(() => {
         axios.get(`/products/${id}`).then((res) => {
-            setProduct(res.data);
+            if (!res.data) {
+                setError(true);
+            } else {
+                setProduct(res.data);
+            }
+        }).finally(() => {
+            setLoading(false);
         });
     }, [id]);
 
@@ -40,7 +50,13 @@ const ProductDetails = () => {
         return () => clearInterval(interval);
     }, []);
 
-    if (!product) return <div>Loading...</div>;
+    if (loading) {
+        return <ShoeLoading></ShoeLoading>
+    }
+
+    if (error) {
+        return <ErrorPage status={404} message="Product Not Found" />;
+    }
 
     return (
         <div className="max-w-[1400px] mx-auto px-4 lg:px-10 pt-8" >

@@ -4,6 +4,7 @@ import User from '../../assets/User.svg'
 import Logo from '../../assets/logo.svg'
 import arrowDown from '../../assets/caret_down.png'
 import menu from '../../assets/heroicons_bars-3-20-solid.svg'
+import { Link } from 'react-router';
 
 const NavBar = () => {
     return (
@@ -21,7 +22,7 @@ const NavBar = () => {
                         </div>
                     </div>
                     <div className='w-20 h-5 lg:w-32 lg:h-8'>
-                        <img src={Logo} alt="" />
+                        <Link to={'/'}><img src={Logo} alt="" /></Link>
                     </div>
                     <div className='flex justify-end w-11.25 h-5 lg:w-75.25 lg:h-8 items-center gap-2 lg:gap-10'>
                         <img className='hidden lg:block' src={Search} alt="" />

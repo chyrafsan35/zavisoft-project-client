@@ -1,18 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import useAxios from '../../../hooks/useAxios';
 import CategoryCard from '../../../components/CategoryCard';
+import ShoeLoading from '../../../components/ShoeLoading';
 
 const Categories = () => {
 
     const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
+
     const axiosInstance = useAxios();
     useEffect(() => {
         axiosInstance.get('/categories/4/products')
             .then(data => {
                 setProducts(data.data);
-                console.log(data.data)
+                console.log(data.data);
+                setLoading(false)
             })
     }, [axiosInstance])
+
+    if (loading) {
+        return <ShoeLoading></ShoeLoading>
+    }
 
     return (
         <div className="bg-[#232321] mt-4 lg:mt-32">
