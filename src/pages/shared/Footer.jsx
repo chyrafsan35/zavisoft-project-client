@@ -9,6 +9,7 @@ import tik from '../../assets/tik.png';
 const Footer = () => {
     return (
         <>
+
             <div className='bg-[#4A69E2] rounded-t-[24px] lg:rounded-[48px] mt-[46px] mx-4 lg:mt-[128px] lg:mx-[60px]'>
                 <div className='flex flex-col lg:flex-row gap-[32px] lg:gap-[203px] p-4 lg:pt-16 lg:px-18 mx-auto mb-8'>
                     <div className='w-[326px] lg:w-[510px]'>
@@ -65,6 +66,11 @@ const Footer = () => {
                         <img src={group} alt="" />
                     </div>
                 </div>
+
+            </div>
+
+            <div>
+                <span className='text-center block mx-auto text-[16px] py-4'>© All rights reserved</span>
             </div>
         </>
     );
