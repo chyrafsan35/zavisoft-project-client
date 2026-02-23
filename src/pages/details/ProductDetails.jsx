@@ -5,6 +5,7 @@ import leg from "../../assets/leg.png";
 import front from "../../assets/front.png";
 import back from "../../assets/back.png";
 import Button from "../../components/Button";
+import Suggestions from "../shared/Suggestions";
 
 const ProductDetails = () => {
     const { id } = useParams();
@@ -44,7 +45,7 @@ const ProductDetails = () => {
     return (
         <div className="max-w-[1400px] mx-auto px-4 lg:px-10 pt-8" >
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 pb-8">
 
                 <div className="lg:col-span-2">
 
@@ -196,6 +197,9 @@ const ProductDetails = () => {
                 </div>
 
             </div>
+
+            <Suggestions></Suggestions>
+
         </div>
     );
 };
