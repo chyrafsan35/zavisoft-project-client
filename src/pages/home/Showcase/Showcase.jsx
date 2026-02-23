@@ -27,7 +27,7 @@ const Showcase = () => {
 
             <div className='mt-6 lg:mt-8 grid grid-cols-2 lg:grid-cols-4 space-x-4 space-y-6'>
                 {
-                    products.slice(0,4).map(shoe => <ProductCard key={shoe.id} shoe={shoe}></ProductCard>)
+                    products.slice(1,5).map(shoe => <ProductCard key={shoe.id} shoe={shoe}></ProductCard>)
                 }
             </div>
         </>

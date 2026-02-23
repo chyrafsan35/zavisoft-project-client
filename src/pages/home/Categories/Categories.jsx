@@ -25,7 +25,7 @@ const Categories = () => {
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 rounded-tl-[40px] overflow-hidden">
-                    {products.slice(0, 2).map((item, index) => (
+                    {products.slice(1, 3).map((item, index) => (
                         <CategoryCard key={item.id} item={item} index={index} />
                     ))}
                 </div>
