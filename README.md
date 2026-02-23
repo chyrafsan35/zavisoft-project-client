@@ -1,16 +1,59 @@
-# React + Vite
+<article>
+  <header>
+    <h1>Shoe Product Management System</h1>
+  </header>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  <section>
+    <h2>Overview</h2>
+    <p>
+      This project is a <strong>Product Management System</strong> showcasing shoes from various brands. 
+      Users can browse products through a <strong>homepage showcase slider</strong> and view detailed information by clicking on a product. 
+      The UI includes smooth slider animations for a modern and interactive experience.
+    </p>
+  </section>
 
-Currently, two official plugins are available:
+  <section>
+    <h2>Features</h2>
+    <ul>
+      <li>Dynamic product showcase slider on the homepage</li>
+      <li>Product detail pages with multiple images and size selection</li>
+      <li>Fully responsive design for desktop and mobile</li>
+      <li>Clean and structured React project architecture</li>
+    </ul>
+  </section>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  <section>
+    <h2>Tech Stack</h2>
+    <ul>
+      <li><strong>React</strong> – Frontend library</li>
+      <li><strong>Tailwind CSS</strong> – Utility-first styling</li>
+      <li><strong>React Router</strong> – Routing and navigation</li>
+      <li><strong>Axios</strong> – API requests</li>
+      <li><strong>Lucide Icons</strong> – Clean, modern icons</li>
+    </ul>
+  </section>
 
-## React Compiler
+  <section>
+    <h2>Setup</h2>
+    <ol>
+      <li>Clone the repository:
+        <pre><code>git clone &lt;your-repo-link&gt;</code></pre>
+      </li>
+      <li>Install dependencies:
+        <pre><code>npm install</code></pre>
+      </li>
+      <li>Start the development server:
+        <pre><code>npm start</code></pre>
+      </li>
+      <li>Open your browser at <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> to view the project.</li>
+    </ol>
+  </section>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  <section>
+    <h2>Live Demo</h2>
+    <p>
+      Check out the live project here: <br/>
+      🌐 <a href="https://zavisoft-project-rafsan.netlify.app/" target="_blank">https://zavisoft-project-rafsan.netlify.app/</a>
+    </p>
+  </section>
+</article>
